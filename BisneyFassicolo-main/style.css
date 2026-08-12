@@ -1,0 +1,183 @@
+/* ========================================================
+   RESET & ESTILIZAÇÃO DO TEMA (Azul Disney & Ouro)
+   ======================================================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+body {
+    background-color: #0b101d;
+    color: #e2e8f0;
+    padding-bottom: 80px;
+}
+
+/* Esconde totalmente os seletores radio nativos na tela */
+input[type="radio"] {
+    display: none;
+}
+
+header {
+    background: linear-gradient(to bottom, #161c36, #0b101d);
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 2px solid #04c5f5;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+header h1 span {
+    color: #00eeff;
+}
+
+header p {
+    font-size: 13px;
+    color: #a0aec0;
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ========================================================
+   MENU DE NAVEGAÇÃO E BOTÕES (LABELS)
+   ======================================================== */
+.tabs-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px auto;
+    flex-wrap: wrap;
+    max-width: 800px;
+}
+
+.tab-btn {
+    background: transparent;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    color: #a0aec0;
+    padding: 12px 25px;
+    font-size: 14px;
+    border-radius: 4px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+    background-color: rgba(212, 175, 55, 0.15);
+    color: #00ffff;
+    border-color: #00ffff;
+}
+
+/* ========================================================
+   MECANISMO DE FILTRAGEM VIA CSS PURO (ESTÁVEL)
+   ======================================================== */
+
+/* Caso o botão "Disney" esteja ativado, esconde as outras marcas */
+#filtro-disney:checked ~ main .royal-grid .royal-card:not(.uni-disney) { display: none; }
+
+/* Caso o botão "Pixar" esteja ativado, esconde as outras marcas */
+#filtro-pixar:checked ~ main .royal-grid .royal-card:not(.uni-pixar) { display: none; }
+
+/* Caso o botão "Marvel" esteja ativado, esconde as outras marcas */
+#filtro-marvel:checked ~ main .royal-grid .royal-card:not(.uni-marvel) { display: none; }
+
+/* Caso o botão "Star Wars" esteja ativado, esconde as outras marcas */
+#filtro-starwars:checked ~ main .royal-grid .royal-card:not(.uni-starwars) { display: none; }
+
+
+/* Muda o visual do botão ativo na barra de navegação para o usuário saber onde clicou */
+#filtro-todos:checked ~ .tabs-menu .btn-todos,
+#filtro-disney:checked ~ .tabs-menu .btn-disney,
+#filtro-pixar:checked ~ .tabs-menu .btn-pixar,
+#filtro-marvel:checked ~ .tabs-menu .btn-marvel,
+#filtro-starwars:checked ~ .tabs-menu .btn-starwars {
+    background-color: rgba(212, 175, 55, 0.2);
+    color: #00caee;
+    border-color: #00d2eebd;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}
+
+/* ========================================================
+   ESTRUTURA DAS SEÇÕES E GRADES DE FILMES/SÉRIES
+   ======================================================== */
+.catalog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.category-title {
+    font-size: 22px;
+    color: #00e1ff;
+    margin: 30px 0 15px 0;
+    border-left: 4px solid #00c3ffa8;
+    padding-left: 15px;
+    letter-spacing: 1px;
+}
+
+.royal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+.royal-card {
+    background-color: #121b2e;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-img {
+    width: 100%;
+    aspect-ratio: 2/3;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-info h3 {
+    font-size: 15px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 5px;
+}
+
+.card-info span {
+    font-size: 11px;
+    color: #08ceff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Efeitos Visuais ao passar o mouse (Hover) */
+.royal-card:hover {
+    transform: translateY(-8px);
+    border-color: #08ceff;
+    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.2);
+}
+
+.royal-card:hover .card-img img {
+    transform: scale(1.08);
+}
