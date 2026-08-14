@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bisney</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Seletores Invisíveis (Controlam o Filtro do CSS) -->
+    <input type="radio" name="filtro-universo" id="filtro-todos" checked>
+    <input type="radio" name="filtro-universo" id="filtro-disney">
+    <input type="radio" name="filtro-universo" id="filtro-pixar">
+    <input type="radio" name="filtro-universo" id="filtro-marvel">
+    <input type="radio" name="filtro-universo" id="filtro-starwars">
+
+    <!-- Topo -->
+    <header>
+        <h1>Bisney<span>Plus</span></h1>
+        <p>Procure aqui seus filmes e séries favoritos</p>
+    </header>
+
+    <!-- Botões Filtros -->
+    <nav class="tabs-menu">
+        <label for="filtro-todos" class="tab-btn btn-todos">Todo o Reino</label>
+        <label for="filtro-disney" class="tab-btn btn-disney">Disney</label>
+        <label for="filtro-pixar" class="tab-btn btn-pixar">Pixar</label>
+        <label for="filtro-marvel" class="tab-btn btn-marvel">Marvel</label>
+        <label for="filtro-starwars" class="tab-btn btn-starwars">Star Wars</label>
+    </nav>
+
+    <!-- Container Principal do Catálogo -->
+    <main class="catalog-container">
+        
+        <h2 class="category-title">Filmes e Séries Disponíveis</h2>
+        <div class="royal-grid">
+
+            <!-- ================= DISNEY ================= -->
+            <div class="royal-card uni-disney"><div class="card-img"><img src="/BisneyFassicolo-main/imagens/moana.jpg"></div><div class="card-info"><h3>Moana </h3><span>Filme • Disney</span></div></div>
+            <div class="royal-card uni-disney"><div class="card-img"><img src="/BisneyFassicolo-main/imagens/moana2.png"></div><div class="card-info"><h3>Moana 2</h3><span>Filme • Disney</span></div></div>
+            <div class="royal-card uni-disney"><div class="card-img"><img src="/BisneyFassicolo-main/imagens/rei_leao.jpeg"></div><div class="card-info"><h3>O Rei Leão</h3><span>Filme • Disney</span></div></div>
+            <div class="royal-card uni-disney"><div class="card-img"><img src="/BisneyFassicolo-main/imagens/rei_leao2.jpeg"></div><div class="card-info"><h3>O Rei Leão 2</h3><span>Filme • Disney</span></div></div>
+            <div class="royal-card uni-disney"><div class="card-img"><img src="/BisneyFassicolo-main/imagens/rei_leao3.jpeg"></div><div class="card-info"><h3>O Rei Leão 3</h3><span>Filme • Disney</span></div></div>
+            <div class="royal-card uni-disney"><div class="card-img"><img src="/BisneyFassicolo-main/imagens/aladdin.jpeg"></div><div class="card-info"><h3>Aladdin</h3><span>Filme • Disney</span></div></div>
+            <div class="royal-card uni-disney"><div class="card-img"><img src="/BisneyFassicolo-main/imagens/pequena_sereia.jpeg"></div><div class="card-info"><h3>A Pequena Sereia</h3><span>Filme • Disney</span></div></div>
+            <div class="royal-card uni-disney"><div class="card-img"><img src="/BisneyFassicolo-main/imagens/pequena_sereia2.jpeg"></div><div class="card-info"><h3>A Pequena Sereia 2</h3><span>Filme • Disney</span></div></div>
+            <div class="royal-card uni-disney"><div class="card-img"><img src="/BisneyFassicolo-main/imagens/mulan.jpeg"></div><div class="card-info"><h3>Mulan</h3><span>Filme • Disney</span></div></div>
+            <div class="royal-card uni-disney"><div class="card-img"><img src="/BisneyFassicolo-main/imagens/mulan2.jpeg"></div><div class="card-info"><h3>Mulan 2</h3><span>Filme • Disney</span></div></div>
+            <div class="royal-card uni-disney"><div class="card-img"><img src="/BisneyFassicolo-main/imagens/frozen.png"></div><div class="card-info"><h3>Frozen </h3><span>Filme • Disney</span></div></div>
+            <div class="royal-card uni-disney"><div class="card-img"><img src="/BisneyFassicolo-main/imagens/frozen2.jpg"></div><div class="card-info"><h3>Frozen 2</h3><span>Filme • Disney</span></div></div>
+            <div class="royal-card uni-disney"><div class="card-img"><img src="/BisneyFassicolo-main/imagens/encanto.jpeg"></div><div class="card-info"><h3>Encanto</h3><span>Filme • Disney</span></div></div>
+            <div class="royal-card uni-disney"><div class="card-img"><img src="/BisneyFassicolo-main/imagens/enrolados.jpeg"></div><div class="card-info"><h3>Enrolados</h3><span>Filme • Disney</span></div></div>
+            <div class="royal-card uni-disney"><div class="card-img"><img src="/BisneyFassicolo-main/imagens/enrolados2.jpeg"></div><div class="card-info"><h3>Enrolados para sempre</h3><span>Filme • Disney</span></div></div>
+            <div class="royal-card uni-disney"><div class="card-img"><img src="/imagens/percy_jackson.jpg"></div><div class="card-info"><h3>Percy Jackson</h3><span>Série • Disney</span></div></div>
+            <div class="royal-card uni-disney"><div class="card-img"><img src="/imagens/high_school.jpeg"></div><div class="card-info"><h3>High School Musical</h3><span>Série • Disney</span></div></div>
+
+            <!-- ================= PIXAR ================= -->
+            <div class="royal-card uni-pixar"><div class="card-img"><img src="/imagens/divertidamente.jpg"></div><div class="card-info"><h3>Divertida Mente </h3><span>Filme • Pixar</span></div></div>
+            <div class="royal-card uni-pixar"><div class="card-img"><img src="/imagens/divertidamente_2.jpg"></div><div class="card-info"><h3>Divertida Mente 2</h3><span>Filme • Pixar</span></div></div>
+            <div class="royal-card uni-pixar"><div class="card-img"><img src="/imagens/toy_story.jpeg"></div><div class="card-info"><h3>Toy Story </h3><span>Filme • Pixar</span></div></div>
+            <div class="royal-card uni-pixar"><div class="card-img"><img src="/imagens/toy_story2.jpeg"></div><div class="card-info"><h3>Toy Story 2</h3><span>Filme • Pixar</span></div></div>
+            <div class="royal-card uni-pixar"><div class="card-img"><img src="/imagens/toy_story3.jpeg"></div><div class="card-info"><h3>Toy Story 3</h3><span>Filme • Pixar</span></div></div>
+            <div class="royal-card uni-pixar"><div class="card-img"><img src="/imagens/toy_story4.jpeg"></div><div class="card-info"><h3>Toy Story 4</h3><span>Filme • Pixar</span></div></div>
+            <div class="royal-card uni-pixar"><div class="card-img"><img src="/imagens/toy_story5.jpg"></div><div class="card-info"><h3>Toy Story 5</h3><span>Filme • Pixar</span></div></div>
+            <div class="royal-card uni-pixar"><div class="card-img"><img src="/imagens/carros.jpg"></div><div class="card-info"><h3>Carros </h3><span>Filme • Pixar</span></div></div>
+            <div class="royal-card uni-pixar"><div class="card-img"><img src="/imagens/carros2.jpg"></div><div class="card-info"><h3>Carros 2</h3><span>Filme • Pixar</span></div></div>
+            <div class="royal-card uni-pixar"><div class="card-img"><img src="/imagens/carros_3.jpeg"></div><div class="card-info"><h3>Carros 3</h3><span>Filme • Pixar</span></div></div>
+            <div class="royal-card uni-pixar"><div class="card-img"><img src="/imagens/poco_loco.jpg"></div><div class="card-info"><h3>Viva: A Vida é Festa</h3><span>Filme • Pixar</span></div></div>
+            <div class="royal-card uni-pixar"><div class="card-img"><img src="/imagens/monstros_sa.jpeg"></div><div class="card-info"><h3>Monstros S.A.</h3><span>Filme • Pixar</span></div></div>
+            <div class="royal-card uni-pixar"><div class="card-img"><img src="/imagens/monstros_sa2.jpeg"></div><div class="card-info"><h3>Monstros no Trabalho</h3><span>Série • Pixar</span></div></div>
+            <div class="royal-card uni-pixar"><div class="card-img"><img src="/imagens/carros_estrada.jpeg"></div><div class="card-info"><h3>Carros na Estrada</h3><span>Série • Pixar</span></div></div>
+
+            <!-- ================= MARVEL ================= -->
+            <div class="royal-card uni-marvel"><div class="card-img"><img src="/imagens/deadpool_wolverine.jpeg"></div><div class="card-info"><h3>Deadpool & Wolverine</h3><span>Filme • Marvel</span></div></div>
+            <div class="royal-card uni-marvel"><div class="card-img"><img src="/imagens/vingadore.jpg"></div><div class="card-info"><h3>Os Vingadores</h3><span>Filme • Marvel</span></div></div>
+            <div class="royal-card uni-marvel"><div class="card-img"><img src="/imagens/vingadores_ultron.jpg"></div><div class="card-info"><h3>Vingadores: Era de Ultron</h3><span>Filme • Marvel</span></div></div>
+            <div class="royal-card uni-marvel"><div class="card-img"><img src="/imagens/vingadore_infinita.jpg"></div><div class="card-info"><h3>Vingadores: Guerra Infinita</h3><span>Filme • Marvel</span></div></div>
+            <div class="royal-card uni-marvel"><div class="card-img"><img src="/imagens/vingadores_ultimato.jpeg"></div><div class="card-info"><h3>Vingadores: Ultimato</h3><span>Filme • Marvel</span></div></div>
+            <div class="royal-card uni-marvel"><div class="card-img"><img src="/imagens/homem_aranha1.jpeg"></div><div class="card-info"><h3>Homem-Aranha: De volta ao Lar</h3><span>Filme • Marvel</span></div></div>
+            <div class="royal-card uni-marvel"><div class="card-img"><img src="/imagens/homem_aranha2.jpg"></div><div class="card-info"><h3>Homem-Aranha: Longe de Casa</h3><span>Filme • Marvel</span></div></div>
+            <div class="royal-card uni-marvel"><div class="card-img"><img src="/imagens/homem_aranha3.jpeg"></div><div class="card-info"><h3>Homem-Aranha: Sem Volta pra Casa</h3><span>Filme • Marvel</span></div></div>
+            <div class="royal-card uni-marvel"><div class="card-img"><img src="/imagens/homem_aranha4.jpeg"></div><div class="card-info"><h3>Homem-Aranha: Um Novo Dia</h3><span>Filme • Marvel</span></div></div>
+            <div class="royal-card uni-marvel"><div class="card-img"><img src="/imagens/guardioes_galaxia1.jpg"></div><div class="card-info"><h3>Guardiões da Galáxia </h3><span>Filme • Marvel</span></div></div>
+            <div class="royal-card uni-marvel"><div class="card-img"><img src="/imagens/guardioes_galaxia2.jpg"></div><div class="card-info"><h3>Guardiões da Galáxia 2</h3><span>Filme • Marvel</span></div></div>
+            <div class="royal-card uni-marvel"><div class="card-img"><img src="/imagens/guardioes_galaxia3.jpg"></div><div class="card-info"><h3>Guardiões da Galáxia 3</h3><span>Filme • Marvel</span></div></div>
+            <div class="royal-card uni-marvel"><div class="card-img"><img src="/imagens/pantera_n.jpg"></div><div class="card-info"><h3>Pantera Negra </h3><span>Filme • Marvel</span></div></div>
+            <div class="royal-card uni-marvel"><div class="card-img"><img src="/imagens/pantera_n2.jpeg"></div><div class="card-info"><h3>Pantera Negra 2</h3><span>Filme • Marvel</span></div></div>
+            <div class="royal-card uni-marvel"><div class="card-img"><img src="/imagens/loki.jpeg"></div><div class="card-info"><h3>Loki</h3><span>Série • Marvel</span></div></div>
+            <div class="royal-card uni-marvel"><div class="card-img"><img src="/imagens/wanda_vision.jpg"></div><div class="card-info"><h3>WandaVision</h3><span>Série • Marvel</span></div></div>
+
+            <!-- ================= STAR WARS (Catálogo Corrigido e Icônico) ================= -->
+            <!-- Filmes Clássicos e Recentes -->
+            <div class="royal-card uni-starwars"><div class="card-img"><img src="/imagens/mandaloriano_grogu.jpeg"></div><div class="card-info"><h3>O Mandaloriano e Grogu</h3><span>Filme • Star Wars</span></div></div>
+            <div class="royal-card uni-starwars"><div class="card-img"><img src="/imagens/star_wars1.jpeg"></div><div class="card-info"><h3>Episódio I: A Ameaça Fantasma</h3><span>Filme • Star Wars</span></div></div>
+            <div class="royal-card uni-starwars"><div class="card-img"><img src="/imagens/star_wars2.jpg"></div><div class="card-info"><h3>Episódio II: Ataque dos Clones</h3><span>Filme • Star Wars</span></div></div>
+            <div class="royal-card uni-starwars"><div class="card-img"><img src="/imagens/star_wars3.jpg"></div><div class="card-info"><h3>Episódio III: A Vingança dos Sith</h3><span>Filme • Star Wars</span></div></div>
+            <div class="royal-card uni-starwars"><div class="card-img"><img src="/imagens/star_wars4.jpeg"></div><div class="card-info"><h3>Episódio IV: Uma Nova Esperança</h3><span>Filme • Star Wars</span></div></div>
+            <div class="royal-card uni-starwars"><div class="card-img"><img src="/imagens/star_wars5.jpeg"></div><div class="card-info"><h3>Episódio V: O Império Contra-Ataca</h3><span>Filme • Star Wars</span></div></div>
+            <div class="royal-card uni-starwars"><div class="card-img"><img src="/imagens/star_wars6.jpg"></div><div class="card-info"><h3>Episódio VI: O Retorno de Jedi</h3><span>Filme • Star Wars</span></div></div>
+            <div class="royal-card uni-starwars"><div class="card-img"><img src="/imagens/star_wars7.jpg"></div><div class="card-info"><h3>Episóio VII: O Despertar da Força</h3><span>Filme • Star Wars</span></div></div>            
+            <div class="royal-card uni-starwars"><div class="card-img"><img src="/BisneyFassicolo-main/imagens/rogue_one.jpg"></div><div class="card-info"><h3>Rogue One</h3><span>Filme • Star Wars</span></div></div>
+ 
+            <!-- Séries Famosas -
